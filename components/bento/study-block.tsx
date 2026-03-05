@@ -4,6 +4,7 @@ import {
   Sigma,
   BookOpen,
 } from "lucide-react"
+import Link from "next/link"
 import type { LucideIcon } from "lucide-react"
 
 interface StudyBlockProps {
@@ -12,6 +13,7 @@ interface StudyBlockProps {
   topics: string[]
   icon: "cs" | "physics" | "math" | "theology"
   serif?: boolean
+  href: string
 }
 
 const iconMap: Record<string, LucideIcon> = {
@@ -27,11 +29,12 @@ export function StudyBlock({
   topics,
   icon,
   serif = false,
+  href,
 }: StudyBlockProps) {
   const Icon = iconMap[icon]
 
   return (
-    <div className="group flex flex-col justify-between border border-border p-6 md:p-8 transition-colors hover:bg-secondary/50">
+    <Link href={href} className="group flex flex-col justify-between border border-border p-6 md:p-8 transition-colors hover:bg-secondary/50">
       <div>
         <div className="mb-6 flex items-start justify-between">
           <Icon
@@ -48,9 +51,8 @@ export function StudyBlock({
         </div>
 
         <h2
-          className={`mb-2 text-lg tracking-tight text-foreground ${
-            serif ? "font-serif" : "font-sans font-medium"
-          }`}
+          className={`mb-2 text-lg tracking-tight text-foreground ${serif ? "font-serif" : "font-sans font-medium"
+            }`}
         >
           {title}
         </h2>
@@ -69,6 +71,6 @@ export function StudyBlock({
           </span>
         ))}
       </div>
-    </div>
+    </Link>
   )
 }

@@ -6,9 +6,9 @@ export const dictionaries = {
       portfolio: "// portfolio",
     },
     hero: {
-      label: "Luis Monzon / 2026",
+      label: "Luis Monzón / 2026",
       title1: "Luis",
-      title2: "Monzon",
+      title2: "Monzón",
       subtitle:
         "Exploring the intersection between code, matter, and spirit.",
     },
@@ -39,13 +39,13 @@ export const dictionaries = {
       },
     },
     experience: {
-      title: "Proof of Work",
-      label: "Experience",
+      title: "Experience",
+      label: "Dates",
       items: [
         {
           year: "Jul 2025 — Present",
           role: "Software Architect",
-          org: "Hybrid",
+          org: "Banrural",
           description:
             "Led a team of 15 in system modernization initiatives. Implemented quality metrics that reduced software bugs by 20%, enhancing overall product reliability.",
         },
@@ -59,14 +59,14 @@ export const dictionaries = {
         {
           year: "Jul 2023 — Jun 2025",
           role: "Systems Analyst II",
-          org: "Hybrid",
+          org: "Banrural",
           description:
             "Drafted SRS and technical specifications. Designed system architectures, managed team resources, and proposed cutting-edge technologies for development.",
         },
         {
           year: "Aug 2021 — Jun 2023",
           role: "Software Developer I",
-          org: "Remote",
+          org: "Banrural",
           description:
             "Developed SOAP and RESTful microservices with IBM Integration Bus and .NET. Created stored procedures with Sybase and SQL Server, and built ETL processes.",
         },
@@ -80,7 +80,7 @@ export const dictionaries = {
         {
           year: "Jun 2024 — Present",
           role: "Training Facilitator",
-          org: "Guatemala Prospera",
+          org: "Guatemala Próspera",
           description:
             "Delivered the 'Ethics and Leadership in 8 Steps' diploma, developing ethical leadership skills among professionals and emerging leaders.",
         },
@@ -108,9 +108,9 @@ export const dictionaries = {
       portfolio: "// portafolio",
     },
     hero: {
-      label: "Luis Monzon / 2026",
+      label: "Luis Monzón / 2026",
       title1: "Luis",
-      title2: "Monzon",
+      title2: "Monzón",
       subtitle:
         "Explorando la interseccion entre el codigo, la materia y el espiritu.",
     },
@@ -141,13 +141,13 @@ export const dictionaries = {
       },
     },
     experience: {
-      title: "Prueba de Trabajo",
-      label: "Experiencia",
+      title: "Experiencia",
+      label: "Fechas",
       items: [
         {
           year: "Jul 2025 — Presente",
           role: "Arquitecto de Software",
-          org: "Hibrido",
+          org: "Banrural",
           description:
             "Lidere un equipo de 15 personas en iniciativas de modernizacion de sistemas. Implemente metricas de calidad que redujeron los errores de software en un 20%.",
         },
@@ -161,14 +161,14 @@ export const dictionaries = {
         {
           year: "Jul 2023 — Jun 2025",
           role: "Analista de Sistemas II",
-          org: "Hibrido",
+          org: "Banrural",
           description:
             "Redaccion de SRS y especificaciones tecnicas. Diseno de arquitecturas de sistemas, gestion de recursos del equipo y propuesta de tecnologias de vanguardia.",
         },
         {
           year: "Ago 2021 — Jun 2023",
           role: "Desarrollador de Software I",
-          org: "Remoto",
+          org: "Banrural",
           description:
             "Desarrollo de microservicios SOAP y RESTful con IBM Integration Bus y .NET. Creacion de procedimientos almacenados con Sybase y SQL Server, y procesos ETL.",
         },
@@ -182,7 +182,7 @@ export const dictionaries = {
         {
           year: "Jun 2024 — Presente",
           role: "Facilitador de Formacion",
-          org: "Guatemala Prospera",
+          org: "Guatemala Próspera",
           description:
             "Imparti el diplomado 'Etica y Liderazgo en 8 Pasos', desarrollando habilidades de liderazgo etico entre profesionales y lideres emergentes.",
         },
