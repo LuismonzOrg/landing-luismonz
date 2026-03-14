@@ -1,13 +1,11 @@
 "use client"
 
 import { HeroBlock } from "@/components/bento/hero-block"
-import { StudyBlock } from "@/components/bento/study-block"
-import { ExperienceBlock } from "@/components/bento/experience-block"
-import { ContactBlock } from "@/components/bento/contact-block"
-import { FocusBlock } from "@/components/bento/focus-block"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { LocaleToggle } from "@/components/locale-toggle"
 import { useI18n } from "@/lib/i18n/context"
+import { ThinkingAboutSection } from "@/components/sections/thinking-about-section"
+import { ExperienceSection } from "@/components/sections/experience-section"
 
 export default function Home() {
   const { t } = useI18n()
@@ -32,76 +30,24 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/* Row 1: Hero — full width */}
         <HeroBlock />
-
-        <div className="md:col-span-2 lg:col-span-3 mt-4 mb-0 flex items-end">
-          <h2 className="font-mono text-sm tracking-widest text-muted-foreground uppercase">
-            Thinking about...
-          </h2>
-        </div>
-
-        {/* Row 2: Four study blocks */}
-        <StudyBlock
-          icon="cs"
-          title={t.studies.cs.title}
-          description={t.studies.cs.description}
-          topics={[...t.studies.cs.topics]}
-          href="https://cs.luismonz.com"
-        />
-        <StudyBlock
-          icon="physics"
-          title={t.studies.physics.title}
-          description={t.studies.physics.description}
-          topics={[...t.studies.physics.topics]}
-          serif
-          href="https://physics.luismonz.com"
-        />
-        <StudyBlock
-          icon="math"
-          title={t.studies.math.title}
-          description={t.studies.math.description}
-          topics={[...t.studies.math.topics]}
-          serif
-          href="https://math.luismonz.com"
-        />
-
-        {/* Row 3: Theology + Current Focus + Contact */}
-        <StudyBlock
-          icon="theology"
-          title={t.studies.theology.title}
-          description={t.studies.theology.description}
-          topics={[...t.studies.theology.topics]}
-          serif
-          href="https://theology.luismonz.com"
-        />
       </div>
 
       <br />
 
-      {/* Bento Grid */}
+      {/* Experience Grid */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-
-        <div className="md:col-span-2 lg:col-span-3 mt-4 mb-0 flex items-end">
-          <h2 className="font-mono text-sm tracking-widest text-muted-foreground uppercase">
-            Experience...
-          </h2>
-        </div>
-
-        <FocusBlock />
-        <ContactBlock />
-
-        {/* Row 4: Experience — wide block */}
-        <ExperienceBlock />
-
-        {/* Footer cell */}
-        <div className="flex items-center justify-between border border-border p-6 md:p-8 lg:col-span-1">
-          <p className="font-mono text-[10px] tracking-widest text-muted-foreground uppercase">
-            {t.footer.left}
-          </p>
-          <p className="font-mono text-[10px] tracking-wider text-muted-foreground">
-            {t.footer.right}
-          </p>
-        </div>
+        <ExperienceSection />
       </div>
+
+      <br />
+
+      {/* Thinking About Grid */}
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <ThinkingAboutSection />
+      </div>
+
+      <br />
+
     </main>
   )
 }
