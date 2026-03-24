@@ -22,7 +22,33 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Luis Monzón — CS / Physics / Math / Theology',
   description: 'Exploring the intersection between code, matter, and spirit. Personal portfolio of Luis Monzón.',
-  generator: 'luismonz.dev',
+  generator: 'luismonz.com',
+  metadataBase: new URL('https://luismonz.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Luis Monzón — CS / Physics / Math / Theology',
+    description: 'Exploring the intersection between code, matter, and spirit. Personal portfolio of Luis Monzón.',
+    url: 'https://luismonz.com',
+    siteName: 'Luis Monzón',
+    images: [
+      {
+        url: '/web-app-manifest-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Luis Monzón Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Luis Monzón — CS / Physics / Math / Theology',
+    description: 'Exploring the intersection between code, matter, and spirit. Personal portfolio of Luis Monzón.',
+    images: ['/web-app-manifest-512x512.png'],
+  },
   icons: {
     icon: [
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
